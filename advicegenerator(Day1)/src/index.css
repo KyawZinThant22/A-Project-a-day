@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Manrope:wght@700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-family: 'Manrope', sans-serif;
+}
+
+button:hover {
+ box-shadow: 0 0 22px 0px hsl(150, 100%, 66%);
+}
+
+button:active{
+  outline: none;
+}
+
+button:focus{
+  outline: none;
+}
+.spinner {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid;
+  border-color:  hsl(150, 100%, 66%) transparent hsl(150, 100%, 66%)
+    hsl(150, 100%, 66%);
+  animation: spinning 0.8s linear infinite both;
+}
+
+@keyframes spinning {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hide {
+  display: none;
+}
